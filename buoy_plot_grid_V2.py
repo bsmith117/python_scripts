@@ -26,7 +26,5 @@ def buoy_plot_grid(buoy_list,name_list,location):
     img2_s = cv2.resize(img2, dsize=(0, 0), fx=1, fy=1)
     #img3_s = cv2.resize(img3, dsize=(0, 0), fx=1, fy=1)
     # function calling
-
-
     img_tile_1 = concat_vh([[img2_s,img1_s]])
     cv2.imwrite('/Users/Brandon/PycharmProjects/WaveApp/report_grid/report_grid_' + location + '.jpg', img_tile_1)
