@@ -12,6 +12,7 @@ def buoy_plot_grid(buoy_list,name_list,location):
     #img3 = cv2.imread(buoy_img + name_list[2] + '_plot.png')
     def concat_vh(list_2d):
 
+
         # return final image
         return cv2.vconcat([cv2.hconcat(list_h)
                             for list_h in list_2d])
